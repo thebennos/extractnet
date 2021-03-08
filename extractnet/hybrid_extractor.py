@@ -252,8 +252,8 @@ class Extractor(BaseEstimator):
         for order_idx, field_name in target_order:
             if field_name == 'breadcrumbs':
                 results[field_name ] = [ str_cast(block.text) for block in multi_blocks[order_idx]]
-            else:
-                results[field_name ] = str_cast(b'\n'.join([ block.text for block in multi_blocks[order_idx]]))
+       #     else:
+       #         results[field_name ] = str_cast(b'\n'.join([ block.text for block in multi_blocks[order_idx]]))
 
         # full_blocks = multi_blocks[0]
         auth_feature = None
