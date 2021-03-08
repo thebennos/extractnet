@@ -229,10 +229,10 @@ class Extractor(BaseEstimator):
     def ml_extract(self, html, as_blocks=False,
             extract_content=True,
             extract_author=True,
-            extract_breadcrumbs=True,
-            extract_headlines=True,
+            extract_breadcrumbs=False,
+            extract_headlines=False,
             extract_description=True,
-            extract_date=True,
+            extract_date=False,
             encoding='utf-8',
             ):
 
